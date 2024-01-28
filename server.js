@@ -10,7 +10,7 @@ const credentials = require('./middlewares/credentials');
 
 const app = express();
 
-const port = 3000;
+// const port = 3000;
 
 app.use(express.json());
 
@@ -26,6 +26,11 @@ app.use('/api/lessons', lesson_routes);
 app.use('/api/orders', order_routes);
 app.use('/api/reviews', review_routes);
 
-app.listen(port, () => {
-  console.log(`Server listening at http://localhost:${port}`);
+// app.listen(port, () => {
+//   console.log(`Server listening at http://localhost:${port}`);
+// });
+
+const port = process.env.PORT || 3000;
+app.listen(port, function() {
+  console.log("App started on port: " + port);
 });
