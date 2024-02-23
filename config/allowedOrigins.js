@@ -6,7 +6,7 @@ const allowedOrigins = [
     'http://localhost:3001',
     'http://localhost:5173',
     '*',
-    'https://madking-07.github.io/asa_frontend_updated/'
+    'https://madking-07.github.io/asa_frontend_updated'
 
 ];
 
